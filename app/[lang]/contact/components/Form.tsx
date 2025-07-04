@@ -4,7 +4,6 @@ import { sendContactRequest } from '@/app/services/api/contact';
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
 
-
 export default function Form({ data }: any) {
   const [formData, setFormData] = useState({
     firstName: '',
