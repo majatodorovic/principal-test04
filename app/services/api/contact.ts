@@ -3,10 +3,8 @@ import toast from 'react-hot-toast';
 
 type Locale = 'en' | 'sr';
 
-export const sendContactRequest = async (
-  formData: any,
-  locale: Locale,
-) => {
+export const sendContactRequest = async (formData: any, locale: Locale) => {
+
   const response = await post(
     '/b2c/contact/contact_page?form_section=contact_page',
     formData,
